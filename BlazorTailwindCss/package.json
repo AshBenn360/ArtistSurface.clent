@@ -1,0 +1,19 @@
+{
+  "name": "blazortailwindcss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "buildcss:debug": "cross-env TAILWIND_MODE=build postcss ./Styles/tailwind.css -o ./wwwroot/css/tailwind.debug.css",
+    "buildcss:release": "cross-env ENV_NODE=production postcss ./Styles/tailwind.css -o ./wwwroot/css/tailwind.release.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "cross-env": "^7.0.3",
+    "postcss": "^8.4.24",
+    "postcss-cli": "^10.1.0",
+    "tailwindcss": "^3.3.2"
+  }
+}
